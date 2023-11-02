@@ -1,0 +1,16 @@
+def function(*numbers):
+    z = [1, 2, 8, 40, 5, 0, 9, 55]
+    v = [-5, -100, -56, -1, -3, -86]
+
+    for n in numbers:
+        if n >= 0:
+            z.append(n)
+        else:
+            v.append(n)
+
+    resultPositive = sorted(z)
+    resultNegative = list(reversed(sorted(v)))
+
+    return resultNegative, resultPositive
+
+print(function())
