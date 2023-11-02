@@ -1,0 +1,15 @@
+C = int(input('C: '))
+I = int(input('I: '))
+G = int(input('G: '))
+Ex = int(input('Ex: '))
+Im = int(input('Im: '))
+
+inputDict = {'C': C, 'I': I, 'G': G, 'Ex': Ex, 'Im': Im}
+inputList = [C, I, G, Ex, Im]
+
+def vvp(C, I, G, Ex, Im):
+    Y = C + I + G + Ex - Im
+    return f'gdp - {Y}'
+
+print(vvp(**inputDict))
+print(vvp(*inputList))
